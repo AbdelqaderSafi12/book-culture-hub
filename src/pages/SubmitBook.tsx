@@ -38,7 +38,7 @@ const SubmitBook = () => {
               </div>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-right">تقديم كتاب</h1>
-            <p className="text-xl text-foreground/70 text-right mr-auto max-w-2xl">
+            <p className="text-xl text-foreground/70 text-right ml-auto max-w-2xl">
               شارك معنا بترشيح كتابك المفضل لإضافته إلى المكتبة الثقافية
             </p>
           </div>

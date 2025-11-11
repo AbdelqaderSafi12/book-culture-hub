@@ -40,7 +40,7 @@ const ParticipantsSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-right">فريق المشروع</h2>
-          <p className="text-xl text-foreground/70 max-w-2xl mr-auto text-right">
+          <p className="text-xl text-foreground/70 max-w-2xl ml-auto text-right">
             نخبة من الأكاديميين والكتاب والمترجمين المتخصصين في المجال الثقافي
           </p>
         </div>

@@ -33,7 +33,7 @@ const Documents = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-right">وثائق المشروع</h1>
-            <p className="text-xl text-foreground/70 max-w-2xl mr-auto text-right">
+            <p className="text-xl text-foreground/70 max-w-2xl ml-auto text-right">
               جميع الوثائق والمستندات الخاصة بالمشروع الثقافي
             </p>
           </div>
