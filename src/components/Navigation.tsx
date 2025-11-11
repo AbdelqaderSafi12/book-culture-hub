@@ -19,10 +19,10 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-2 text-2xl font-bold">
-            <BookOpen className="w-8 h-8 text-primary" />
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               مشروع الكتب الثقافي
             </span>
+            <BookOpen className="w-8 h-8 text-primary" />
           </NavLink>
 
           {/* Desktop Navigation */}
@@ -31,7 +31,7 @@ const Navigation = () => {
               <NavLink
                 key={link.path}
                 to={link.path}
-                className="text-foreground/80 hover:text-foreground transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left"
+                className="text-foreground/80 hover:text-foreground transition-colors relative after:absolute after:bottom-0 after:right-0 after:w-full after:h-0.5 after:bg-primary after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100 hover:after:origin-right"
                 activeClassName="text-primary after:scale-x-100"
               >
                 {link.name}

@@ -32,8 +32,8 @@ const Documents = () => {
       <div className="pt-32 pb-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">وثائق المشروع</h1>
-            <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-right">وثائق المشروع</h1>
+            <p className="text-xl text-foreground/70 max-w-2xl mr-auto text-right">
               جميع الوثائق والمستندات الخاصة بالمشروع الثقافي
             </p>
           </div>
@@ -46,15 +46,15 @@ const Documents = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-2xl">
+                  <CardTitle className="flex items-center gap-3 text-2xl text-right">
+                    {section.title}
                     <div className="p-3 rounded-lg bg-primary/10">
                       <section.icon className="w-6 h-6 text-primary" />
                     </div>
-                    {section.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-foreground/60 text-lg">{section.description}</p>
+                  <p className="text-foreground/60 text-lg text-right">{section.description}</p>
                 </CardContent>
               </Card>
             ))}

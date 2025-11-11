@@ -39,8 +39,8 @@ const ParticipantsSection = () => {
     <section className="py-20 px-4">
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">فريق المشروع</h2>
-          <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-right">فريق المشروع</h2>
+          <p className="text-xl text-foreground/70 max-w-2xl mr-auto text-right">
             نخبة من الأكاديميين والكتاب والمترجمين المتخصصين في المجال الثقافي
           </p>
         </div>
@@ -53,7 +53,7 @@ const ParticipantsSection = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardContent className="p-6">
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 flex-row-reverse">
                   <div className="relative w-20 h-20 rounded-full overflow-hidden ring-2 ring-primary/20 group-hover:ring-primary/50 transition-all">
                     <img
                       src={participant.image}
@@ -61,7 +61,7 @@ const ParticipantsSection = () => {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                  <div>
+                  <div className="text-right">
                     <h3 className="text-xl font-bold mb-1">{participant.name}</h3>
                     <p className="text-foreground/60">{participant.role}</p>
                   </div>

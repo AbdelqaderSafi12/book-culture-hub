@@ -61,8 +61,8 @@ const Publishers = () => {
       <div className="pt-32 pb-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">دور النشر المشاركة</h1>
-            <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-right">دور النشر المشاركة</h1>
+            <p className="text-xl text-foreground/70 max-w-2xl mr-auto text-right">
               شركاؤنا من أبرز دور النشر العربية المتخصصة في المحتوى الثقافي الرصين
             </p>
           </div>
@@ -82,19 +82,19 @@ const Publishers = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-2xl">{publisher.name}</CardTitle>
+                  <CardTitle className="text-2xl text-right">{publisher.name}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-foreground/70 leading-relaxed">{publisher.description}</p>
+                  <p className="text-foreground/70 leading-relaxed text-right">{publisher.description}</p>
                   
                   <div className="space-y-2 text-sm">
-                    <div className="flex items-center gap-2 text-foreground/60">
-                      <Mail className="w-4 h-4 text-primary" />
+                    <div className="flex items-center gap-2 text-foreground/60 justify-end">
                       <span>{publisher.email}</span>
+                      <Mail className="w-4 h-4 text-primary" />
                     </div>
-                    <div className="flex items-center gap-2 text-foreground/60">
-                      <Phone className="w-4 h-4 text-primary" />
+                    <div className="flex items-center gap-2 text-foreground/60 justify-end">
                       <span>{publisher.phone}</span>
+                      <Phone className="w-4 h-4 text-primary" />
                     </div>
                   </div>
 
@@ -103,8 +103,8 @@ const Publishers = () => {
                     className="w-full border-primary text-primary hover:bg-primary/10 gap-2"
                     onClick={() => window.open(publisher.website, '_blank')}
                   >
-                    <ExternalLink className="w-4 h-4" />
                     زيارة الموقع
+                    <ExternalLink className="w-4 h-4" />
                   </Button>
                 </CardContent>
               </Card>

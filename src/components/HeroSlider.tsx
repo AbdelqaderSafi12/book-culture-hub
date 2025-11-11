@@ -48,8 +48,8 @@ const HeroSlider = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
           </div>
-          <div className="relative h-full container mx-auto px-4 flex items-center">
-            <div className="max-w-2xl animate-fade-in">
+          <div className="relative h-full container mx-auto px-4 flex items-center justify-end">
+            <div className="max-w-2xl animate-fade-in text-right">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 {slide.title}
               </h1>
@@ -71,16 +71,16 @@ const HeroSlider = () => {
 
       {/* Navigation Arrows */}
       <button
-        onClick={prevSlide}
+        onClick={nextSlide}
         className="absolute left-8 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-card/50 backdrop-blur-sm hover:bg-card transition-colors"
-        aria-label="Previous slide"
+        aria-label="Next slide"
       >
         <ChevronLeft className="w-6 h-6" />
       </button>
       <button
-        onClick={nextSlide}
+        onClick={prevSlide}
         className="absolute right-8 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-card/50 backdrop-blur-sm hover:bg-card transition-colors"
-        aria-label="Next slide"
+        aria-label="Previous slide"
       >
         <ChevronRight className="w-6 h-6" />
       </button>

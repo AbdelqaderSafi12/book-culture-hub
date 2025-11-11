@@ -37,20 +37,20 @@ const SubmitBook = () => {
                 <BookOpen className="w-12 h-12 text-primary" />
               </div>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">تقديم كتاب</h1>
-            <p className="text-xl text-foreground/70">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-right">تقديم كتاب</h1>
+            <p className="text-xl text-foreground/70 text-right mr-auto max-w-2xl">
               شارك معنا بترشيح كتابك المفضل لإضافته إلى المكتبة الثقافية
             </p>
           </div>
 
           <Card className="gradient-card border-border/50 shadow-elegant animate-fade-in">
             <CardHeader>
-              <CardTitle className="text-2xl">معلومات الكتاب</CardTitle>
+              <CardTitle className="text-2xl text-right">معلومات الكتاب</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
-                  <Label htmlFor="title" className="text-lg">عنوان الكتاب *</Label>
+                  <Label htmlFor="title" className="text-lg text-right block">عنوان الكتاب *</Label>
                   <Input
                     id="title"
                     name="title"
@@ -58,12 +58,13 @@ const SubmitBook = () => {
                     onChange={handleChange}
                     placeholder="أدخل عنوان الكتاب"
                     required
-                    className="bg-secondary border-border/50"
+                    className="bg-secondary border-border/50 text-right"
+                    dir="rtl"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="author" className="text-lg">المؤلف *</Label>
+                  <Label htmlFor="author" className="text-lg text-right block">المؤلف *</Label>
                   <Input
                     id="author"
                     name="author"
@@ -71,12 +72,13 @@ const SubmitBook = () => {
                     onChange={handleChange}
                     placeholder="اسم المؤلف"
                     required
-                    className="bg-secondary border-border/50"
+                    className="bg-secondary border-border/50 text-right"
+                    dir="rtl"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="publisher" className="text-lg">دار النشر *</Label>
+                  <Label htmlFor="publisher" className="text-lg text-right block">دار النشر *</Label>
                   <Input
                     id="publisher"
                     name="publisher"
@@ -84,12 +86,13 @@ const SubmitBook = () => {
                     onChange={handleChange}
                     placeholder="اسم دار النشر"
                     required
-                    className="bg-secondary border-border/50"
+                    className="bg-secondary border-border/50 text-right"
+                    dir="rtl"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="description" className="text-lg">وصف الكتاب *</Label>
+                  <Label htmlFor="description" className="text-lg text-right block">وصف الكتاب *</Label>
                   <Textarea
                     id="description"
                     name="description"
@@ -98,12 +101,13 @@ const SubmitBook = () => {
                     placeholder="نبذة مختصرة عن الكتاب وأهميته الثقافية"
                     required
                     rows={5}
-                    className="bg-secondary border-border/50"
+                    className="bg-secondary border-border/50 text-right"
+                    dir="rtl"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="cover" className="text-lg">غلاف الكتاب (اختياري)</Label>
+                  <Label htmlFor="cover" className="text-lg text-right block">غلاف الكتاب (اختياري)</Label>
                   <div className="border-2 border-dashed border-border/50 rounded-lg p-8 text-center hover:border-primary/50 transition-colors cursor-pointer bg-secondary/50">
                     <Upload className="w-12 h-12 mx-auto mb-4 text-foreground/50" />
                     <p className="text-foreground/60 mb-2">اضغط لرفع صورة الغلاف</p>
